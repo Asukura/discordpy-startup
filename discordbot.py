@@ -1,19 +1,19 @@
-from discord.ext import commands
-import os
-import traceback
+import discord
+import datetime
 
-bot = commands.Bot(command_prefix='/')
-token = os.environ['DISCORD_BOT_TOKEN']
+TOKEN = "NzYyMjEzNDU3Mzc4MDE3Mjkx.X3l4mQ.6Jow2-PiDOiZLyR3Yi1VDb2JrjY"
 
-@bot.event
-async def on_command_error(ctx, error):
-    orig_error = getattr(error, "original", error)
-    error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
-    await ctx.send(error_msg)
+client = discord.Client()
 
-@bot.command()
-async def ping(ctx):
-    await ctx.send('pong')
+@client.event
+async def on_message(message):
+    if message.author.bot:
+        return
+    
+    if message.content:
+        dt_now = datetime.datetime.now()
+        with open("rollcall/rollcall_data.txt","a",encoding="utf_8") as file:
+            file.write(str(dt_now.year + " ") + str(dt_now.month+ " ") + str(dt_now.day+ " ") + message.author.name + "\n")
 
 
-bot.run(token)
+client.run(TOKEN)
