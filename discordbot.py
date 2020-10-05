@@ -12,7 +12,7 @@ async def on_message(message):
         return
     
     if message.content == "output csv":
-        client.send_message(message.channel,LIST)
+        await client.send_message(message.channel,LIST)
 
     else:
         dt_now = datetime.datetime.now()
