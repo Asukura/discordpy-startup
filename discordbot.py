@@ -12,7 +12,8 @@ async def on_message(message):
     if message.author.bot:
         return
     
-    elif message.content == "output csv":
+    
+    if message.content == "output csv":
         client.send_message(message.channel,LIST)
         
     elif message.content:
