@@ -11,12 +11,13 @@ async def on_message(message):
     if message.author.bot:
         return
     
-    if message.content == "output csv":
-        await client.send_message(message.channel,LIST)
-
-    else:
+    if message.content:
         dt_now = datetime.datetime.now()
         LIST.append(str(dt_now.year + " ") + str(dt_now.month+ " ") + str(dt_now.day+ " ") + message.author.name)
+        for i in LIST:
+            await client.send_message(message.channel,LIST[i])
+       
+    
 
 
 client.run(TOKEN)
