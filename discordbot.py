@@ -6,16 +6,8 @@ TOKEN = os.environ['DISCORD_BOT_TOKEN']
 
 client=discord.Client()
 channel = client.get_channel(660806268532949002)
-@client.event
 
-async def on_ready():
-    print('Logged in as')
-    print(client.user.name)
-    print(client.user.id)
-    print('------')
-    
 @client.event
-
 async def on_message(message):
     if "大好きだよ" in message.content:
         if client.user !=message.author:
