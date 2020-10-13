@@ -78,7 +78,7 @@ async def on_message(message):
            await message.channel.send(m)
            
     elif message.content.startswith("こっち"):
-           await message.channel.send("なんでしょう？",file = discord.File("runa.jpg"))
+           await message.channel.send("なんでしょう？",file = discord.File("image/runa.jpg"))
         
     elif  message.content.startswith("ただいま"):
         if client.user !=message.author:
