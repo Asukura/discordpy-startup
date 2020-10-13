@@ -436,6 +436,37 @@ async def on_message(message):
            
            m="ぁﾞｯ♥ィﾞｯ、…ぎぃﾞィﾞ♥んァﾞぁﾞｯ、ぁﾞぁアﾞ♥ｯぁﾞ♥ぁッ、あﾞ、…ｯ、あｯ、あ、あﾞぁﾞｯ〜〜〜♥♥♥ぬぽぬぽ、って…ぇ♥らぁ、めﾞｯ♥♥イﾞｯ♥イﾞったのﾞｯ♥♥ぁﾞ、っぁ…、ん♥ひっ♥は、ｧﾞ、っ、ぁﾞー…♥♥ごりゅごりゅしな、っれ、ンﾞァﾞぅ゛♥♥♥ンﾞ…♥ナカぁﾞつ、あ゛つぃﾞいﾞ……ｯ♥ちくび、やｯ♥やぁﾞっ！♥ィｯ、イったｯ♥イったぁﾞｯ♥イﾞったかりﾞゃぁﾞっ♥♥んぉ♥ぉﾞ…ｯ、ん、ンﾞｯ♥んゃﾞ、───ァﾞｯ♥"
 
-           await message.channel.send(m)          
+           await message.channel.send(m)
+    elif message.content.startswith("アリサを縛って"):
+        await message.channel.send("よいしょ！",file = discord.File("81712332_p0_master1200.jpg"))
+
+    elif message.content.startswith("アリサの水浴び盗撮"):
+        await message.channel.send("任せてください！でもご褒美のおちんちんはくださいよ？",file = discord.File("82404243_p0_master1200.jpg"))
+
+    elif message.content.startswith("アリサ　乗って"):
+        await message.channel.send("こわれちゃうぅ...//",file = discord.File("59549145_p3_master1200.jpg")) 
+
+    elif message.content.startswith("アリサ　全部脱いで"):
+        await message.channel.send("...//",file = discord.File("70057498_p1_master1200.jpg")) 
+
+    elif message.content.startswith("アリサ"):
+        await message.channel.send("ふーっ…ふうっ…♡とまって、止まってよおおお゛ッ♡♡♡ひゃうゔぅぅッッ♡♡♡♡あ゛ゔぅ、やっ、た、たひゅけて…♡♡♡それっ、やめへってえ゛ぇ…♡♡あー…♡あたま、とけちゃうよお……♡♡...//",file = discord.File("69379638_p2.jpg")) 
+
+    elif message.content.startswith("手で抜いて"):
+        await message.channel.send("よーしよし❤",file = discord.File("62600796_p0_master1200.jpg")) 
+
+    elif message.content.startswith("ルナ巨乳だよな"):
+        await message.channel.send("君に触ってもらえるのが一番の幸せだよ...//",file = discord.File("63612392_p0_master1200.jpg")) 
+        
+    elif message.content.startswith("お姉ちゃん"):
+        await message.channel.send("はぁ..はぁ..♡",file = discord.File("81348479_p0_master1200.jpg"))
+    
+    elif "風呂" in message.content:
+        if client.user !=message.author:
+
+           
+           m="…っは……少年……はあ……まいったな………いい子だ………はあ………はあ………ん、…っはあ……誘い方が上手になったな………はあ………っは、……んん、…少年…はあ……"
+
+           await message.channel.send(m)
            
 client.run(TOKEN)
