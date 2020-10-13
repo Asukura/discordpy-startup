@@ -450,7 +450,8 @@ async def on_message(message):
         await message.channel.send("...//",file = discord.File("image/70057498_p1_master1200.jpg")) 
 
     elif message.content.startswith("アリサ"):
-        await message.channel.send("ふーっ…ふうっ…♡とまって、止まってよおおお゛ッ♡♡♡ひゃうゔぅぅッッ♡♡♡♡あ゛ゔぅ、やっ、た、たひゅけて…♡♡♡それっ、やめへってえ゛ぇ…♡♡あー…♡あたま、とけちゃうよお……♡♡...//",file = discord.File("69379638_p2.jpg")) 
+        await message.channel.send("ふーっ…ふうっ…♡とまって、止まってよおおお゛ッ♡♡♡ひゃうゔぅぅッッ♡♡♡♡あ゛ゔぅ、やっ、た、たひゅけて…♡♡♡それっ、やめへってえ゛ぇ…♡♡あー…♡あたま、とけちゃうよお……♡♡...//"
+,file = discord.File("image/69379638_p2.jpg")) 
 
     elif message.content.startswith("手で抜いて"):
         await message.channel.send("よーしよし❤",file = discord.File("image/62600796_p0_master1200.jpg")) 
